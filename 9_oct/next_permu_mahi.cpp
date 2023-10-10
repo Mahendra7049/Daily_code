@@ -2,6 +2,7 @@ void nextPermutation(vector<int>& nums) {
         if(nums.size()==1) return;
         int idx1=-1;
         for(int i=nums.size()-2;i>=0;i--){
+                //check kro ki kya left side me koi choti value hai to usko store kara lo
             if(nums[i]<nums[i+1]){
                 idx1=i;
                 break;
